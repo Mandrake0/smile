@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Smile App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mini-dark.min.css" />
+
+</head>
+<body>
+    
+    <view-header></view-header>
+    <view-capture></view-capture>
+    <view-edit></view-edit>
+
+    <!-- Riot tags -->
+    <script src="components/view-header.tag" type="riot/tag"></script>
+    <script src="components/view-capture.tag" type="riot/tag"></script>
+    <script src="components/view-edit.tag" type="riot/tag"></script>
+        
+    <!-- Core Libs -->
+    <script src="../js/riot+compiler.min.js"></script>
+    
+    
+    <script>
+        // Mixin Setup with the values
+        var SharedMixin = {
+            observable: riot.observable()
+        }
+        
+        // Creates the Data Object and the Interface when everything got loaded
+        window.onload = () =>{
+            // Mounting all Riot Tags
+            riot.mount('*')
+        }
+    </script>
+</body>
+</html>
