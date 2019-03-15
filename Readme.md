@@ -1,3 +1,5 @@
+# NO ACTIVE DEVELOPMENT
+
 # Selfie Comform with Smileys
 
 
