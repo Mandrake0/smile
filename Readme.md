@@ -8,7 +8,6 @@
 * Edit
 * Publish
 
-
 ### Capture
 
 **Functions**
